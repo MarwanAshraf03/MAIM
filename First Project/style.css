@@ -1,0 +1,126 @@
+html {
+  color: white;
+  scroll-behavior: smooth;
+}
+
+body {
+  height: 200vh;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-image: linear-gradient(#031732, #40e0d0);
+}
+
+header {
+  display: flex;
+  direction: rtl;
+}
+
+.header-buttons {
+  width: 25%;
+  direction: ltr;
+  display: flex;
+  flex-direction: row-reverse;
+  padding-right: 10px;
+  padding-top: 10px;
+  justify-content: space-between;
+}
+
+a {
+  background-color: #010c19;
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  cursor: pointer;
+  color: white;
+  background-color: rebeccapurple;
+}
+
+h1 {
+  padding-left: 10px;
+}
+
+.section h3 {
+  padding: 0;
+  margin: 0;
+  padding-left: 10px;
+}
+
+.section span {
+  background-color: #ffffc5;
+  display: block;
+  height: 1px;
+  padding-left: 10px;
+  margin-left: 10px;
+  width: 30%;
+}
+
+.section p {
+  padding-left: 10px;
+  max-width: 30%;
+  word-break: break-word;
+}
+
+.section {
+  margin-bottom: 100px;
+}
+
+br {
+  background-color: black;
+}
+
+.even {
+  direction: rtl;
+}
+
+.even h3 {
+  padding-right: 10px;
+}
+.even span {
+  padding-right: 10px;
+}
+
+.even p {
+  padding-right: 10px;
+}
+
+.up-button {
+  text-align: center;
+  height: 60px;
+  width: 60px;
+  color: white;
+  background-color: #010c19;
+  direction: ltr;
+  display: inline;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+.up-button:hover {
+  background-color: rebeccapurple;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  position: relative;
+  width: 100%;
+  height: 70px;
+  display: flex;
+}
+
+.footer-text {
+  position: absolute;
+  align-self: center;
+  margin-left: 10px;
+}

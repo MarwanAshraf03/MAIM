@@ -1,0 +1,11 @@
+<!-- HTML -->
+<button id="showTimeBtn">Show Current Time</button>
+<div id="timeDisplay"></div>
+
+<script>
+// JavaScript
+document.getElementById('showTimeBtn').addEventListener('click', function() {
+  const currentTime = new Date().toLocaleString();
+  document.getElementById('timeDisplay').textContent = currentTime;
+});
+</script>

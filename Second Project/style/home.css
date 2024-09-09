@@ -1,0 +1,27 @@
+header {
+    display: flex;
+    direction: rtl;
+  }
+  
+  .header-buttons {
+    width: 25%;
+    direction: ltr;
+    display: flex;
+    flex-direction: row-reverse;
+    padding-right: 10px;
+    padding-top: 10px;
+    justify-content: space-between;
+  }
+  
+  a {
+    background-color: #010c19;
+    color: white;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    cursor: pointer;
+    color: white;
+    background-color: rebeccapurple;
+  }
+  

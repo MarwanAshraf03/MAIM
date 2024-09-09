@@ -1,0 +1,12 @@
+/* first method using the color name */
+h1 {
+    color: green;
+}
+/* Second method using color's hexadecimal code */
+h2 {
+    color: #00008B;
+}
+/* Third method using rgb method */
+h3 {
+    color: rgb(255, 0, 0);
+}

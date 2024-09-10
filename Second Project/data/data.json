@@ -1,0 +1,104 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Wireless Mouse",
+      "price": 19.99
+    },
+    {
+      "id": 2,
+      "name": "Mechanical Keyboard",
+      "price": 49.99
+    },
+    {
+      "id": 3,
+      "name": "Laptop Stand",
+      "price": 24.99
+    },
+    {
+      "id": 4,
+      "name": "USB-C Hub",
+      "price": 29.99
+    },
+    {
+      "id": 5,
+      "name": "Noise Cancelling Headphones",
+      "price": 99.99
+    },
+    {
+      "id": 6,
+      "name": "Portable SSD 1TB",
+      "price": 129.99
+    },
+    {
+      "id": 7,
+      "name": "Smartphone Holder",
+      "price": 14.99
+    },
+    {
+      "id": 8,
+      "name": "Bluetooth Speaker",
+      "price": 39.99
+    },
+    {
+      "id": 9,
+      "name": "External Hard Drive 2TB",
+      "price": 89.99
+    },
+    {
+      "id": 10,
+      "name": "Gaming Chair",
+      "price": 199.99
+    },
+    {
+      "id": 11,
+      "name": "4K Monitor",
+      "price": 399.99
+    },
+    {
+      "id": 12,
+      "name": "USB Webcam",
+      "price": 59.99
+    },
+    {
+      "id": 13,
+      "name": "Wireless Charger",
+      "price": 24.99
+    },
+    {
+      "id": 14,
+      "name": "Smart Light Bulb",
+      "price": 12.99
+    },
+    {
+      "id": 15,
+      "name": "Fitness Tracker",
+      "price": 69.99
+    },
+    {
+      "id": 16,
+      "name": "Drone with Camera",
+      "price": 249.99
+    },
+    {
+      "id": 17,
+      "name": "Smartwatch",
+      "price": 179.99
+    },
+    {
+      "id": 18,
+      "name": "Tablet Stand",
+      "price": 22.99
+    },
+    {
+      "id": 19,
+      "name": "HDMI Cable",
+      "price": 8.99
+    },
+    {
+      "id": 20,
+      "name": "Laptop Cooling Pad",
+      "price": 27.99
+    }
+  ]
+}

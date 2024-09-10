@@ -60,6 +60,9 @@
   background: url("../assets/images/item.png") no-repeat center center;
   background-size: contain;
 }
+.product .prod-img:hover {
+  cursor: pointer;
+}
 
 .product .prod-title {
   font-size: 18px;
@@ -74,15 +77,17 @@
 
 .add-to-cart {
   background-color: #e74c3c;
+  color: #2c3e50;
   padding: 10px 15px;
   margin-top: 10px;
   border: none;
+  transition: background-color 0.3s ease;
   border-radius: 5px;
   cursor: pointer;
 }
 
 .add-to-cart:hover {
-  background-color: #e64a19;
+  background-color: #555;
 }
 
 /* Responsive */

@@ -43,3 +43,8 @@ fetch("../data/data.json") // Assuming the file is in the same directory as the 
     });
   })
   .catch((error) => console.error("Error fetching product data:", error));
+
+window.onbeforeunload = () => {
+  alert("Are you sure!");
+  return 1;
+};

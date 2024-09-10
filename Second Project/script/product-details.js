@@ -21,6 +21,14 @@ fetch("../data/data.json")
       document.getElementsByClassName(
         "prod-img"
       )[0].style.backgroundImage = `url("/assets/images/${product.id}.png")`;
+      const select = document.getElementById("variants");
+      product.V_or_S.forEach((option) => {
+        console.log(option);
+        const appendd = document.createElement("option");
+        appendd.value = option;
+        appendd.textContent = option;
+        select.appendChild(appendd);
+      });
       document
         .getElementsByClassName("add-to-cart")[0]
         .addEventListener("click", () => {

@@ -15,9 +15,10 @@ body {
   justify-content: space-between;
   background-color: #ffffff;
   padding: 40px;
-  padding-top: 98.4px;
+  margin-top: 98.4px;
   border-radius: 10px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  width: inherit;
 }
 
 .product .prod-img {
@@ -80,6 +81,34 @@ option {
   text-align: center;
 }
 
+/* Styling the quantity container */
+.quantity-container {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* Styling the label (Quantity text) */
+.quantity-container span {
+  font-size: 16px;
+  font-weight: 500;
+  color: #2c3e50;
+  margin-right: 10px; /* Space between label and input */
+}
+
+/* Styling the input field */
+.quantity-container .quantity {
+  width: 60px;
+  padding: 8px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  text-align: center;
+  color: #2c3e50;
+  background-color: #f8f9fa;
+  transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
 .add-to-cart {
   background-color: #e74c3c;
   color: #2c3e50;
@@ -97,10 +126,9 @@ option {
   background-color: #555;
 }
 
-/* Responsive adjustments */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .product {
-    flex-direction: column; /* Stack the image and details vertically */
+    flex-direction: column;
     padding: 20px;
   }
 
@@ -117,4 +145,4 @@ option {
   .add-to-cart {
     align-self: center;
   }
-}
+} */

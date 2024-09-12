@@ -3,67 +3,99 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Checkout Page</title>
+    <title>Home Page</title>
     <link rel="stylesheet" href="style/index.css" />
     <link rel="stylesheet" href="style/checkout.css" />
   </head>
   <body>
     <header id="header"></header>
-    <div class="checkout-container">
-      <h1>Checkout</h1>
-      <div class="prod-list">
-        <div class="prod">
-          <div class="prod-img"></div>
-          <span class="prod-quantity">Quantity</span>
-          <span class="prod-v-or-s">Type</span
-          ><span class="prod-title">name</span
-          ><span class="prod-price">price</span>
-          <button class="remove">Remove</button>
+    <div class="checkout-form">
+      <h2>Checkout</h2>
+      <form action="/submit-order" method="POST">
+        <div class="name-email">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Your Name"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Your Email"
+              required
+            />
+          </div>
         </div>
-        <div class="prod">
-          <div class="prod-img"></div>
-          <span class="prod-quantity">Quantity</span>
-          <span class="prod-v-or-s">Type</span
-          ><span class="prod-title">name</span
-          ><span class="prod-price">price</span>
-          <button class="remove">Remove</button>
+
+        <label for="address">Address</label>
+        <input
+          type="text"
+          id="address"
+          name="address"
+          placeholder="Your Address"
+          required
+        />
+
+        <div class="city-zip">
+          <div class="form-group">
+            <label for="city">City</label>
+            <input
+              type="text"
+              id="city"
+              name="city"
+              placeholder="Your City"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="zip">ZIP Code</label>
+            <input
+              type="text"
+              id="zip"
+              name="zip"
+              placeholder="Your ZIP Code"
+              required
+            />
+          </div>
         </div>
-        <div class="prod">
-          <div class="prod-img"></div>
-          <span class="prod-quantity">Quantity</span>
-          <span class="prod-v-or-s">Type</span
-          ><span class="prod-title">name</span
-          ><span class="prod-price">price</span>
-          <button class="remove">Remove</button>
-        </div>
-        <div class="prod">
-          <div class="prod-img"></div>
-          <span class="prod-quantity">Quantity</span>
-          <span class="prod-v-or-s">Type</span
-          ><span class="prod-title">name</span
-          ><span class="prod-price">price</span>
-          <button class="remove">Remove</button>
-        </div>
-        <div class="prod">
-          <div class="prod-img"></div>
-          <span class="prod-quantity">Quantity</span>
-          <span class="prod-v-or-s">Type</span
-          ><span class="prod-title">name</span
-          ><span class="prod-price">price</span>
-          <button class="remove">Remove</button>
-        </div>
-        <div class="prod">
-          <div class="prod-img"></div>
-          <span class="prod-quantity">Quantity</span>
-          <span class="prod-v-or-s">Type</span
-          ><span class="prod-title">name</span
-          ><span class="prod-price">price</span>
-          <button class="remove">Remove</button>
-        </div>
-      </div>
+
+        <label for="card-name">Cardholder's Name</label>
+        <input
+          type="text"
+          id="card-name"
+          name="card-name"
+          placeholder="Name on Card"
+          required
+        />
+
+        <label for="card-number">Card Number</label>
+        <input
+          type="text"
+          id="card-number"
+          name="card-number"
+          placeholder="XXXX-XXXX-XXXX-XXXX"
+          required
+        />
+
+        <label for="expiry-date">Expiry Date</label>
+        <input type="date" id="expiry-date" name="expiry-date" required />
+
+        <label for="cvv">CVV</label>
+        <input type="password" id="cvv" name="cvv" placeholder="XXX" required />
+
+        <button type="submit" class="submit-button">Place Order</button>
+      </form>
     </div>
     <footer id="footer"></footer>
-    <script src="script/index.js"></script>
     <script src="script/checkout.js"></script>
+    <script src="script/index.js"></script>
   </body>
 </html>

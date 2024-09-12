@@ -10,7 +10,93 @@
   <body>
     <header id="header"></header>
     <div class="some-prods">
-      <h2 class="section-title">Products</h2>
+      <div class="header-filter-search">
+        <h2 class="section-title">Products</h2>
+
+        <div class="filter-search">
+          <!-- Search Bar -->
+          <input
+            type="text"
+            name="search"
+            id="search-bar"
+            class="search-bar"
+            placeholder="Search products..."
+          />
+
+          <!-- Dropdown Menu with Filter Options -->
+          <div class="filter-dropdown">
+            <select id="filter-options" onchange="toggleFilter(this)">
+              <option value="none">Select Filter</option>
+              <option value="price-range">Filter by Price</option>
+              <option value="product-type">Filter by Category</option>
+              <option value="sort-price">Sort by Price</option>
+            </select>
+
+            <!-- Price Range Inputs (Initially Hidden) -->
+            <div
+              id="price-range-filter"
+              class="filter-content"
+              style="display: none"
+            >
+              <label for="min-price">Min Price:</label>
+              <input
+                type="number"
+                id="min-price"
+                name="min-price"
+                placeholder="1"
+                min="1"
+                max="1000"
+                value="1"
+              />
+
+              <label for="max-price">Max Price:</label>
+              <input
+                type="number"
+                id="max-price"
+                name="max-price"
+                placeholder="1000"
+                max="1000"
+                min="1"
+                value="1000"
+              />
+            </div>
+
+            <!-- Filter by Type (Initially Hidden) -->
+            <div
+              id="product-type-filter"
+              class="filter-content"
+              style="display: none"
+            >
+              <label for="product-type">Filter by Category: </label>
+              <select id="product-type" name="product-type">
+                <option value="all">All</option>
+                <option value="Electronics & Accessories">
+                  Electronics & Accessories
+                </option>
+                <option value="Smart Devices & Wearables">
+                  Smart Devices & Wearables
+                </option>
+                <option value="Office & Gaming Gear">
+                  Office & Gaming Gear
+                </option>
+              </select>
+            </div>
+
+            <!-- Sort by Price (Initially Hidden) -->
+            <div
+              id="sort-price-filter"
+              class="filter-content"
+              style="display: none"
+            >
+              <label for="sort-price">Sort by Price: </label>
+              <select id="sort-price" name="sort-price">
+                <option value="ascending">Ascending</option>
+                <option value="descending">Descending</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="grid-container"></div>
     </div>
     <footer id="footer"></footer>

@@ -1,20 +1,15 @@
 let listofitems = localStorage.getItem("user-data");
 if (listofitems) listofitems = JSON.parse(listofitems);
 else listofitems = {};
-console.log(listofitems);
-// Get the product ID from the URL
 const urlParams = new URLSearchParams(window.location.search);
 const productId = urlParams.get("id");
-// console.log(productId);
-// Fetch product data again or pass it through local storage if needed
+
 fetch("../data/data.json")
   .then((response) => response.json())
   .then((data) => {
     const product = data.products.find((p) => p.id == productId);
-    // console.log(product);
 
     if (product) {
-      // Display product details on the page
       document.getElementsByClassName("prod-title")[0].innerHTML = product.name;
       document.getElementsByClassName(
         "prod-price"
@@ -27,7 +22,6 @@ fetch("../data/data.json")
       )[0].style.backgroundImage = `url("/assets/images/${product.id}.png")`;
       const select = document.getElementById("variants");
       product.V_or_S.forEach((option) => {
-        // console.log(option);
         const appendd = document.createElement("option");
         appendd.value = option;
         appendd.textContent = option;
@@ -36,32 +30,33 @@ fetch("../data/data.json")
       document
         .getElementsByClassName("add-to-cart")[0]
         .addEventListener("click", () => {
-          //   console.log(document.getElementById("variants").value);
-          //   window.location.href = `shoping-cart.html`;
           const val = document.getElementById("variants").value;
-          if (
-            productId in listofitems &&
-            listofitems[productId]["variants"] == val
-          ) {
-            console.log(true);
-            console.log(listofitems[productId]["q"]);
-            listofitems[productId]["q"]++;
-            // console.log("it is already here");
+          const qq = document.getElementsByClassName("quantity")[0];
+          if (productId in listofitems && val in listofitems[productId]) {
+            listofitems[productId][val] += Number(qq.value);
+          } else if (productId in listofitems) {
+            listofitems[productId][val] = Number(qq.value);
           } else {
-            // console.log(val);
-            // console.log(listofitems[productId]["variants"]);
-            console.log("the else");
             listofitems[productId] = {
-              q: 1,
-              variants: val,
+              // variant: quantity,
+              [val]: Number(qq.value),
             };
-            // console.log(JSON.stringify(listofitems));
           }
-          // console.log(listofitems);
+          console.log(listofitems);
+          qq.value = 1;
           localStorage.setItem("user-data", JSON.stringify(listofitems));
         });
     } else {
       console.error("Product not found!");
     }
   });
-// localStorage.clear();
+
+const min_price = document.getElementsByClassName("quantity")[0];
+min_price.addEventListener("input", () => {
+  if (min_price.value < 1) {
+    min_price.value = 1;
+  }
+});
+min_price.addEventListener("focus", () => {
+  min_price.select();
+});

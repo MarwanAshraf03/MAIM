@@ -5,140 +5,160 @@
       "name": "Wireless Mouse",
       "price": 19.99,
       "Description": "A sleek and ergonomic wireless mouse designed for both comfort and precision. Perfect for extended computer use with smooth tracking and a long-lasting battery.",
-      "V_or_S": ["Black", "White", "Blue"]
+      "V_or_S": ["Black", "White", "Blue"],
+      "category": "Electronics & Accessories"
     },
     {
       "id": 2,
       "name": "Mechanical Keyboard",
       "price": 49.99,
       "Description": "A high-quality mechanical keyboard offering tactile feedback and durability. Ideal for gamers and typists seeking a responsive typing experience with customizable RGB backlighting.",
-      "V_or_S": ["Red Switches", "Blue Switches", "Brown Switches"]
+      "V_or_S": ["Red Switches", "Blue Switches", "Brown Switches"],
+      "category": "Electronics & Accessories"
     },
     {
       "id": 3,
       "name": "Laptop Stand",
       "price": 24.99,
       "Description": "An adjustable laptop stand that promotes better posture and cooling. Its lightweight and portable design makes it easy to carry and set up anywhere.",
-      "V_or_S": ["Adjustable", "Fixed"]
+      "V_or_S": ["Adjustable", "Fixed"],
+      "category": "Office & Gaming Gear"
     },
     {
       "id": 4,
       "name": "USB-C Hub",
       "price": 29.99,
       "Description": "A versatile USB-C hub that expands your laptop's connectivity options. Includes multiple USB ports, HDMI, and card readers to accommodate various peripherals and devices.",
-      "V_or_S": ["4 Ports", "6 Ports", "8 Ports"]
+      "V_or_S": ["4 Ports", "6 Ports", "8 Ports"],
+      "category": "Electronics & Accessories"
     },
     {
       "id": 5,
       "name": "Noise Cancelling Headphones",
       "price": 99.99,
       "Description": "Premium noise-cancelling headphones that provide an immersive audio experience. Designed to block out ambient noise and deliver crystal-clear sound for a more enjoyable listening experience.",
-      "V_or_S": ["Over-Ear", "In-Ear"]
+      "V_or_S": ["Over-Ear", "In-Ear"],
+      "category": "Smart Devices & Wearables"
     },
     {
       "id": 6,
       "name": "Power Bank",
       "price": 129.99,
       "Description": "A compact and high-speed portable SSD with 1TB of storage. Ideal for quick data transfer and secure storage of important files, offering fast read and write speeds.",
-      "V_or_S": ["Black", "Silver"]
+      "V_or_S": ["Black", "Silver"],
+      "category": "Electronics & Accessories"
     },
     {
       "id": 7,
       "name": "Smartphone Holder",
       "price": 14.99,
       "Description": "A sturdy and adjustable smartphone holder that securely holds your device at the perfect angle. Great for hands-free video calls, watching movies, or following recipes.",
-      "V_or_S": ["Small", "Medium", "Large"]
+      "V_or_S": ["Small", "Medium", "Large"],
+      "category": "Office & Gaming Gear"
     },
     {
       "id": 8,
       "name": "Bluetooth Speaker",
       "price": 39.99,
       "Description": "A portable Bluetooth speaker with rich sound quality and a long battery life. Perfect for enjoying your favorite music or podcasts anywhere you go.",
-      "V_or_S": ["Waterproof", "Standard"]
+      "V_or_S": ["Waterproof", "Standard"],
+      "category": "Electronics & Accessories"
     },
     {
       "id": 9,
       "name": "External Hard Drive 2TB",
       "price": 89.99,
       "Description": "A high-capacity external hard drive with 2TB of storage. Provides ample space for backing up files, photos, and videos, and features reliable data transfer rates.",
-      "V_or_S": ["Black", "Blue", "Red"]
+      "V_or_S": ["Black", "Blue", "Red"],
+      "category": "Electronics & Accessories"
     },
     {
       "id": 10,
       "name": "Gaming Chair",
       "price": 199.99,
       "Description": "An ergonomic gaming chair designed for comfort during long gaming sessions. Features adjustable armrests, lumbar support, and a reclining backrest for maximum relaxation.",
-      "V_or_S": ["Standard", "XL"]
+      "V_or_S": ["Standard", "XL"],
+      "category": "Office & Gaming Gear"
     },
     {
       "id": 11,
       "name": "4K Monitor",
       "price": 399.99,
       "Description": "A high-definition 4K monitor that delivers stunning visuals and crisp details. Ideal for professional work, gaming, or streaming with accurate color reproduction and wide viewing angles.",
-      "V_or_S": ["27 inches", "32 inches"]
+      "V_or_S": ["27 inches", "32 inches"],
+      "category": "Office & Gaming Gear"
     },
     {
       "id": 12,
       "name": "USB Webcam",
       "price": 59.99,
       "Description": "A high-resolution USB webcam with clear image quality and built-in microphone. Perfect for video conferencing, streaming, or creating content with ease.",
-      "V_or_S": ["1080p", "4K"]
+      "V_or_S": ["1080p", "4K"],
+      "category": "Electronics & Accessories"
     },
     {
       "id": 13,
       "name": "Wireless Charger",
       "price": 24.99,
       "Description": "A sleek and efficient wireless charger compatible with most Qi-enabled devices. Provides fast and convenient charging without the need for cables.",
-      "V_or_S": ["Small", "Large"]
+      "V_or_S": ["Small", "Large"],
+      "category": "Electronics & Accessories"
     },
     {
       "id": 14,
       "name": "Smart Light Bulb",
       "price": 12.99,
       "Description": "A smart light bulb that offers customizable lighting options. Control brightness and color temperature with your smartphone or voice assistant to create the perfect ambiance.",
-      "V_or_S": ["Color Changing", "Warm White"]
+      "V_or_S": ["Color Changing", "Warm White"],
+      "category": "Smart Devices & Wearables"
     },
     {
       "id": 15,
       "name": "Fitness Tracker",
       "price": 69.99,
       "Description": "A stylish fitness tracker that monitors your daily activity, heart rate, and sleep patterns. Provides insights into your health and fitness goals with real-time notifications and tracking.",
-      "V_or_S": ["Standard", "Premium"]
+      "V_or_S": ["Standard", "Premium"],
+      "category": "Smart Devices & Wearables"
     },
     {
       "id": 16,
       "name": "Drone with Camera",
       "price": 249.99,
       "Description": "A high-performance drone equipped with a high-resolution camera for capturing breathtaking aerial footage. Includes GPS, multiple flight modes, and an intuitive control system for easy operation.",
-      "V_or_S": ["1080p Camera", "4K Camera"]
+      "V_or_S": ["1080p Camera", "4K Camera"],
+      "category": "Smart Devices & Wearables"
     },
     {
       "id": 17,
       "name": "Smartwatch",
       "price": 179.99,
       "Description": "A feature-rich smartwatch that tracks your fitness, notifications, and more. Offers a range of health-monitoring features, customizable watch faces, and integration with your smartphone.",
-      "V_or_S": ["40mm", "44mm"]
+      "V_or_S": ["40mm", "44mm"],
+      "category": "Smart Devices & Wearables"
     },
     {
       "id": 18,
       "name": "Tablet Stand",
       "price": 22.99,
       "Description": "A versatile tablet stand that allows for multiple viewing angles and secure placement. Ideal for hands-free use while watching videos, reading, or video calling.",
-      "V_or_S": ["Small", "Large"]
+      "V_or_S": ["Small", "Large"],
+      "category": "Office & Gaming Gear"
     },
     {
       "id": 19,
       "name": "HDMI Cable",
       "price": 8.99,
       "Description": "A high-speed HDMI cable for connecting your devices to your TV or monitor. Supports high-definition video and audio for an optimal viewing experience.",
-      "V_or_S": ["1 Meter", "2 Meters", "3 Meters"]
+      "V_or_S": ["1 Meter", "2 Meters", "3 Meters"],
+      "category": "Electronics & Accessories"
     },
     {
       "id": 20,
       "name": "Laptop Cooling Pad",
       "price": 27.99,
       "Description": "A laptop cooling pad designed to improve airflow and prevent overheating. Features built-in fans and an adjustable stand to enhance cooling efficiency and comfort during use.",
-      "V_or_S": ["Standard", "XL"]
+      "V_or_S": ["Standard", "XL"],
+      "category": "Office & Gaming Gear"
     }
   ]
 }

@@ -66,8 +66,8 @@ h1 {
 }
 
 .prod-img {
-  width: 80px;
-  height: 80px;
+  /* width: 80px;
+  height: 80px; */
   background: url("../assets/images/item.png") no-repeat;
   background-size: cover;
 

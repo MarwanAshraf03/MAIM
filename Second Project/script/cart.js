@@ -1,6 +1,12 @@
 let listofitems = JSON.parse(localStorage.getItem("user-data"));
 document.getElementsByClassName("checkout")[0].addEventListener("click", () => {
-  window.location.href = `checkout.html`;
+  if (
+    Number(
+      document.getElementsByClassName("total")[0].textContent.substring(14)
+    ) == 0
+  )
+    console.log("can't navigate");
+  else window.location.href = `checkout.html`;
 });
 const calc_total = () => {
   const total = document.getElementsByClassName("total")[0];

@@ -185,7 +185,6 @@ document.addEventListener("DOMContentLoaded", function () {
           type_select.addEventListener("change", () => {
             const type_param = type_select.value;
             const filtered_by_type = [];
-            console.log(type_param);
             if (type_param === "all") {
               load_page();
             } else {
@@ -193,7 +192,6 @@ document.addEventListener("DOMContentLoaded", function () {
                 if (type_param === product.category)
                   filtered_by_type.push(product.id);
               });
-              // console.log(filtered_by_type);
               load_page(filtered_by_type);
             }
           });
@@ -206,7 +204,6 @@ document.addEventListener("DOMContentLoaded", function () {
         .then((data) => {
           const sort_select = document.getElementById("sort-price");
           let sort_param = sort_select.value;
-          console.log(sort_param);
 
           if (sort_param === "ascending") {
             const sortedByPrice = sort_data_asc(data);

@@ -1,18 +1,14 @@
-// Wait for the DOM to load before attaching event listeners
 document.addEventListener("DOMContentLoaded", () => {
   const form = document.querySelector("form");
 
   form.addEventListener("submit", (event) => {
-    event.preventDefault(); // Prevent form submission to the server
-    console.log("clicked");
+    event.preventDefault();
 
-    // Validate the form fields
     if (validateForm()) {
       displayConfirmation();
     }
   });
 
-  // Function to validate the form
   function validateForm() {
     const name = document.getElementById("name");
     const email = document.getElementById("email");
@@ -24,12 +20,10 @@ document.addEventListener("DOMContentLoaded", () => {
     const expiryDate = document.getElementById("expiry-date");
     const cvv = document.getElementById("cvv");
 
-    // Simple regex patterns for validation
     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     const cardNumberPattern = /^\d{4}-\d{4}-\d{4}-\d{4}$/;
     const cvvPattern = /^\d{3}$/;
 
-    // Array to hold all form fields for validation
     const fields = [
       { field: name, message: "Please enter your name" },
       {
@@ -52,20 +46,17 @@ document.addEventListener("DOMContentLoaded", () => {
 
     for (const { field, message, pattern } of fields) {
       if (!field.value || (pattern && !pattern.test(field.value))) {
-        console.log(message); // Display alert for missing/invalid field
-        alert(message); // Display alert for missing/invalid field
+        alert(message);
         field.focus();
-        return false; // Prevent form submission if any field is invalid
+        return false;
       }
     }
 
-    return true; // Form is valid
+    return true;
   }
 
-  // Function to display a confirmation message
   function displayConfirmation() {
     alert("Thank you for your order! Your payment has been processed.");
-    // Optionally, reset the form after confirmation
     form.reset();
   }
 });

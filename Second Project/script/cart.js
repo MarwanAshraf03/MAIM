@@ -3,10 +3,9 @@ document.getElementsByClassName("checkout")[0].addEventListener("click", () => {
   if (
     Number(
       document.getElementsByClassName("total")[0].textContent.substring(14)
-    ) == 0
+    ) != 0
   )
-    console.log("can't navigate");
-  else window.location.href = `checkout.html`;
+    window.location.href = `checkout.html`;
 });
 const calc_total = () => {
   const total = document.getElementsByClassName("total")[0];

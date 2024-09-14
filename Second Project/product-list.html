@@ -14,7 +14,6 @@
         <h2 class="section-title">Products</h2>
 
         <div class="filter-search">
-          <!-- Search Bar -->
           <input
             type="text"
             name="search"
@@ -23,7 +22,6 @@
             placeholder="Search products..."
           />
 
-          <!-- Dropdown Menu with Filter Options -->
           <div class="filter-dropdown">
             <select id="filter-options" onchange="toggleFilter(this)">
               <option value="none">Select Filter</option>
@@ -32,7 +30,6 @@
               <option value="sort-price">Sort by Price</option>
             </select>
 
-            <!-- Price Range Inputs (Initially Hidden) -->
             <div
               id="price-range-filter"
               class="filter-content"
@@ -61,7 +58,6 @@
               />
             </div>
 
-            <!-- Filter by Type (Initially Hidden) -->
             <div
               id="product-type-filter"
               class="filter-content"
@@ -82,7 +78,6 @@
               </select>
             </div>
 
-            <!-- Sort by Price (Initially Hidden) -->
             <div
               id="sort-price-filter"
               class="filter-content"
